@@ -1,18 +1,40 @@
+# ReelGuard AI - Mindful Scrolling Assistant
+
+> Developed for the **Meta Global AI Developer Hackathon 2026** (Track: *Build for Your World*).
+
 ## 💡 Project Overview
-Scrolling through Facebook Reels is one of the biggest drivers of mindless time-wasting (doomscrolling) and attention fatigue in modern users. Current reminder notifications are often too robotic and easily ignored or dismissed.
-
-**ReelGuard AI** is a smart assistant integrated with the **Meta Model API** designed to analyze content consumption behavior and deliver highly personalized, empathetic nudges. It helps users mindfully pause and get back to their real-world goals.
-
-## 🚀 Key Features (Planned)
-- **Smart Contextual Analysis:** Detects when a user shifts from quick entertainment to mindless scrolling based on session duration and video content.
-- **Personalized Nudges:** Leverages Meta's language models to generate empathetic, non-judgmental reminders tied directly to the user's daily goals.
-- **Development Acceleration:** Built rapidly using the **Muse Code** coding agent during the 10-day hackathon sprint.
-
-## 🛠️ Expected Tech Stack
-- **AI Core:** Meta Model API (Muse Spark / Muse Wonder series)
-- **Backend:** Python (FastAPI)
-- **Code Acceleration:** Muse Code
-- **Infrastructure:** Modal / Baseten
+Scrolling through Facebook Reels is one of the biggest drivers of mindless time-wasting (doomscrolling) and attention fatigue. **ReelGuard AI** is a smart assistant powered by the **Meta Model API** that analyzes content consumption behavior and delivers personalized, empathetic nudges to help users mindfully pause and reconnect with their real-world goals.
 
 ---
-*Developed by Doanphuoc280980 for the Meta Global AI Developer Hackathon 2026.*
+
+## 🛠️ Tech Stack
+- **AI Core:** Meta Model API (`muse-spark`)
+- **Backend:** Python, FastAPI, Pydantic
+- **Infrastructure:** Docker, Uvicorn
+
+---
+
+## 📂 Project Structure
+- `main.py`: FastAPI application entry point and endpoints.
+- `services.py`: Integration logic with Meta Model API for generating empathetic nudges.
+- `models.py`: Pydantic data models for session analysis.
+- `config.py`: Environment configurations and alert thresholds.
+- `requirements.txt`: Project Python dependencies.
+- `Dockerfile`: Containerization configuration.
+
+---
+
+## 🚀 Getting Started Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Doanphuoc280980/reelguard-ai.git](https://github.com/Doanphuoc280980/reelguard-ai.git)
+   cd reelguard-ai
+Install dependencies:
+
+Bash
+pip install -r requirements.txt
+Run the application:
+
+Bash
+uvicorn main:app --reload
